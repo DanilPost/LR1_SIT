@@ -18,8 +18,8 @@ COPY ./nginx/html/hello.html /usr/share/nginx/html/hello.html`
 `$ docker run -it --rm -d -p 8080:80 --name web webserver`  
   
 # Добавим html страницу
-
-`<!doctype html>  
+```
+<!doctype html>  
 <html lang="en">  
 <head>  
   <meta charset="utf-8">  
@@ -28,7 +28,8 @@ COPY ./nginx/html/hello.html /usr/share/nginx/html/hello.html`
 <body>  
   <h2>Hello SIT from DanilPostvaykin!</h2>  
 </body>  
-</html>` 
+</html>
+```
   
 # Проверяем работоспособность  
 ![HWDP](https://user-images.githubusercontent.com/71296166/224723757-b9b486e0-813f-45ba-aefc-3afeca8860f2.png)
